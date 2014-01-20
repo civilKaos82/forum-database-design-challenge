@@ -4,8 +4,6 @@
 
 * Design database schema from problem data
 * Model relationships in a relational database (one-to-one, one-to-many, many-to-many)
-###Release 0 : Design the schema
-
 
 ##Summary 
 

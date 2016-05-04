@@ -1,33 +1,21 @@
-# Forum Database Design 
+# Schema Design: Forum 
  
-##Learning Competencies 
+## Summary 
+[Internet forums][wikipedia internet forum] have been around for decades!  So, what's a forum?  It's an application that allows users to have written conversations.  One user starts a *thread* with an opening post, and other users respond with their own posts.  We're going to model a database schema to support a forum.
 
-* Design database schema from problem data
-* Model relationships in a relational database (one-to-one, one-to-many, many-to-many)
 
-##Summary 
+## Releases
+### Release 0:  Design the Schema
+We're going to design a schema to support an internet forum.  Our database schema should support the following forum features.
 
- Forums have been around for almost 2 decades. Delve into the underlying database!
+- A forum is organized into sections (e.g., "Off Topic", "Introduce Yourself", etc.)
+- A user can create threads; each thread is associated with one and only one section.
+- A user can post in threads; each post is associated with one thread.
+- A user can be an administrator, a moderator, or a normal user.
+- A thread can be *pinned*, so that it is displayed at the top of a section's list of threads.
 
-Requirements:
+Use [Schema Designer][] to visually model the schema.  Submit a screenshot of the completed schema design. 
 
-1. A forum has multiple sections (e.g., "Off Topic", "Introduce Yourself", etc.)
-2. Users can create threads
-3. Threads belong to one and only one section
-4. Users can post a new comment in a thread
-5. Users can reply to a comment in a thread
 
-##Releases
-
-###Release 0 : Design the schema
-
-Design a database schema for a forum that meets the requirements.
-
-Use [SQL Designer](https://socrates.devbootcamp.com/sql.html) to create your schema.  When you are done, save the XML of your schema and copy it into the source file `forum.md`. Then, take a screenshot of your final schema design, and upload it using a free image-upload service like [Min.us](http://minus.com).  Paste the URL of the screenshot into your source file (before your XML code). 
-
-<!-- ##Optimize Your Learning  -->
-
-##Resources
-
-* [SQL Designer](https://socrates.devbootcamp.com/sql.html)
-##Resources
+[Schema Designer]: https://schemadesigner.devbootcamp.com/
+[wikipedia internet forum]: https://en.wikipedia.org/wiki/Internet_forum
